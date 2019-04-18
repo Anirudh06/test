@@ -16,9 +16,9 @@ public class BuyerDatabase {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			connection=DriverManager.getConnection(
-					DatabaseConfiguration.dataBaseUrl,
-					DatabaseConfiguration.userName,
-					DatabaseConfiguration.password);
+					"jdbc:mysql://localhost:3306/booklender?useSSL=false",
+					"anirudh",
+					"Pr@shan1");
 		}catch(Exception e) {
 			System.out.println("Exception while establishing connection");
 			System.out.println(e);
