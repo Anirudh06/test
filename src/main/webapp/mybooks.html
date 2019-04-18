@@ -541,7 +541,7 @@ var ctxPath = "http://localhost:8082/thebooklender"
 	            
 	        	    	},
 	        	    	error:function(){
-	        	    		swal("error occurred");
+	        	    		alert("error occurred");
 	        	        	
 	        	    	}
 	        		});
@@ -578,6 +578,7 @@ var ctxPath = "http://localhost:8082/thebooklender"
 	       
 	data += "</div>";	
 		}
+		console.log(data);
 		$('#listing').append(data);
 
 	}
