@@ -534,7 +534,7 @@ $(document).ready(function(){
 		loadListings();
 		loadListing();
 })	
-var ctxPath = "http://localhost:8082/thebooklender"
+var ctxPath = "http://localhost:"+location.port+"/thebooklender"
 	function loadListings(){
 	var name=localStorage.getItem("name"); 
 	var ownerId=localStorage.getItem("id"); 
